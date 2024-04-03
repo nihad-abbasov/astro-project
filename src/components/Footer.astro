@@ -1,0 +1,37 @@
+---
+import Social from "./Social.astro";
+
+const platform = "github";
+const username = "nihad-abbasov";
+---
+
+<footer>
+  <div class="footer_container">
+    <p>Learn more about my projects on</p>
+    <div class="platforms_parent">
+      <Social platform="linkedin" username="in/nihad-abbasov-dev" />
+      <Social platform="github" username="nihad-abbasov" />
+      <Social platform="facebook" username="nihad.abbasov.dev" />
+    </div>
+  </div>
+</footer>
+
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .footer_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.2rem;
+  }
+  .platforms_parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+  }
+</style>
